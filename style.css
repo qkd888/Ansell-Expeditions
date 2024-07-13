@@ -21,7 +21,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.1rem;
   background: #ffffff;
   border: 2px solid black;
   box-shadow: #000 1px 1px 10px 1px;
@@ -41,7 +41,8 @@ html {
   height: 50px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 .nav .logo:hover {
   transition: all 0.4s ease-in-out;
@@ -59,6 +60,7 @@ html {
 @media screen and (min-width: 768px) {
   .nav small {
     display: block;
+    margin-right: 45rem;
   }
 }
 .nav .nav-link-box {
@@ -72,6 +74,11 @@ html {
 @media (min-width: 480px) {
   .nav .nav-link-box {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-box {
+    margin-left: -55rem;
   }
 }
 .nav .nav-link-box.show-navbar {
@@ -92,6 +99,11 @@ html {
 .nav .nav-link-box .nav-links:hover {
   transition: all 0.4s ease-in-out;
   color: rgb(33, 239, 10);
+}
+@media screen and (min-width: 768px) {
+  .nav .nav-link-box .nav-links {
+    margin-right: 2rem;
+  }
 }
 .nav .nav-toggle {
   display: flex;
@@ -192,7 +204,7 @@ html {
   justify-content: center;
   align-items: center;
   background: rgb(255, 255, 255);
-  top: 4.5rem;
+  top: 3.5rem;
   left: 0;
   width: 105%;
   display: none;
@@ -233,7 +245,7 @@ html {
   padding: 0.5rem;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.184)), url(./images/hero4.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.184)), url(./images/hero2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -249,12 +261,12 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .hero p {
   color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
   .hero p {
@@ -274,7 +286,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero #hero-contact-button {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .hero #hero-contact-button:hover {
@@ -294,8 +306,8 @@ html {
   flex-wrap: wrap;
   margin-top: 2rem;
   padding-top: 2rem;
+  padding-bottom: 5rem;
   width: 100%;
-  height: 100vh;
 }
 .about-content .about-text {
   flex: 1;
@@ -370,10 +382,6 @@ html {
   background-color: #00fe00;
   color: white;
 }
-.about-content #expedition-counter {
-  font-weight: bold;
-  color: black;
-}
 
 /**************************TOURS*/
 /********************************/
@@ -383,23 +391,24 @@ header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem;
   width: 100%;
 }
 header h1 {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 main {
-  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 2rem;
   margin: 0 auto;
   padding: 2rem;
+  background: #000000;
 }
-
-#tours-container {
+main #tours-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
@@ -576,6 +585,8 @@ main {
 /********************************/
 /********************************/
 .contact-container {
+  width: 100%;
+  padding-bottom: 2rem;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -591,7 +602,7 @@ main {
   color: #000000;
   text-align: center;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .contact-container header h1 {
   background: #ffffff;

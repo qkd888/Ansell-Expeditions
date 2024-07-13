@@ -182,7 +182,7 @@ closeButton.addEventListener('click', () => {
         description: "Explore the vibrant city of Cape Town, including Table Mountain and the V&A Waterfront.",
         price: "$800",
         rating: 4.6,
-        image: "./images/cape town.jpg"
+        image: "./images/capetown.jpg"
     },
     {
         id: 3,
@@ -190,7 +190,7 @@ closeButton.addEventListener('click', () => {
         description: "Journey along the scenic Garden Route, stopping at charming coastal towns and nature reserves.",
         price: "$1200",
         rating: 4.7,
-        image: "./images/garden route.jpg"
+        image: "./images/gardenroute.jpg"
     },
     {
         id: 4,
@@ -246,7 +246,7 @@ closeButton.addEventListener('click', () => {
         description: "Visit the infamous prison where Nelson Mandela was held and learn about South Africa's history.",
         price: "$700",
         rating: 4.8,
-        image: "./images/robben island.jpg"
+        image: "./images/robin.jpg"
     }
 ];
 

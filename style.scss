@@ -23,7 +23,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.1rem;
   background: #ffffff;
   border: 2px solid black;
   box-shadow: #000 1px 1px 10px 1px;
@@ -42,7 +42,8 @@ html {
     height: 50px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
 
 
 
@@ -62,6 +63,7 @@ html {
 
     @media screen and (min-width: 768px) {
       display: block;
+      margin-right: 45rem;
     }
 
   }
@@ -78,12 +80,17 @@ html {
       display: block;
     }
 
+    @media screen and (min-width: 768px) {
+      margin-left: -55rem;
+    }
+
     &.show-navbar {
       display: none;
     }
 
     i {
       margin-right: 0.2rem;
+
     }
 
     .nav-links {
@@ -98,6 +105,10 @@ html {
       &:hover {
         transition: all 0.4s ease-in-out;
         color: rgb(33, 239, 10);
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-right: 2rem;
       }
     }
   }
@@ -217,7 +228,7 @@ html {
   justify-content: center;
   align-items: center;
   background: rgb(255, 255, 255);
-  top: 4.5rem;
+  top: 3.5rem;
   left: 0;
   width: 105%;
   display: none;
@@ -262,7 +273,7 @@ html {
   padding: 0.5rem;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.184)), url(./images/hero4.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.184)), url(./images/hero2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -276,13 +287,13 @@ html {
     color: #ffffff;
 
     @media screen and (min-width:768px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
   p {
     color: rgb(255, 255, 255);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @media screen and (min-width:768px) {
       font-size: 1.5rem;
@@ -301,7 +312,7 @@ html {
     color: rgb(255, 255, 255);
 
     @media screen and (min-width:768px) {
-      font-size: 1.5rem;
+      font-size: 1.0rem;
     }
 
     &:hover {
@@ -324,8 +335,8 @@ html {
   flex-wrap: wrap;
   margin-top: 2rem;
   padding-top: 2rem;
+  padding-bottom: 5rem;
   width: 100%;
-  height: 100vh;
 
   .about-text {
     flex: 1;
@@ -407,18 +418,7 @@ html {
 
     }
   }
-
-
-
-  #expedition-counter {
-    font-weight: bold;
-    color: black;
-  }
 }
-
-
-
-
 
 
 
@@ -431,29 +431,33 @@ header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem;
   width: 100%;
 
   h1 {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
 main {
-  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 2rem;
   margin: 0 auto;
   padding: 2rem;
+  background: #000000;
+
+  #tours-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
-#tours-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+
 
 .tour-card {
   background-color: white;
@@ -645,6 +649,8 @@ main {
 
 
 .contact-container {
+  width: 100%;
+  padding-bottom: 2rem;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -657,7 +663,7 @@ main {
     color: #000000;
     text-align: center;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     h1 {
       background: #ffffff;
