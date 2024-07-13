@@ -59,7 +59,7 @@ html {
 @media screen and (min-width: 768px) {
   .nav small {
     display: block;
-    margin-right: 45rem;
+    margin-right: 48rem;
   }
 }
 .nav .nav-link-box {
@@ -390,8 +390,8 @@ header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;
   width: 100%;
@@ -405,7 +405,7 @@ main {
   margin-bottom: 2rem;
   margin: 0 auto;
   padding: 2rem;
-  background: #000000;
+  background: #ffffff;
 }
 main #tours-container {
   display: grid;
@@ -417,7 +417,7 @@ main #tours-container {
 .tour-card {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 8px 1px rgb(0, 0, 0);
   padding: 1rem;
   transition: transform 0.3s ease;
 }
