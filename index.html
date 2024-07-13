@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Ansell Expeditions</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo"></div>
+      <small>Ansell Expeditions</small>
+
+      <div class="nav-link-box">
+        <a href="#home" class="nav-links"><i class="fas fa-home"></i>Home</a>
+        <a href="#about" class="nav-links">About</a>
+        <a href="#tours" class="nav-links"
+          ><i class="fa-solid fa-landmark"></i>Tours</a
+        >
+        <a href="#contact" class="nav-links"
+          ><i class="fa-solid fa-address-card"></i>Contact</a
+        >
+      </div>
+      <a class="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+
+      <a class="share-icon"><i class="fa-solid fa-share-nodes"></i></a>
+      <div class="share-icon-box">
+        <div href="" class="share-links-box">
+          <a href="https://web.facebook.com/kyle.ansell.73" class="share-links"
+            ><i class="fa-solid fa-share-nodes"> Facebook</i></a
+          >
+          <a href="" class="share-links">
+            <i class="fa-solid fa-share-nodes"> WhatsApp</i>
+          </a>
+          <a href="" class="share-links">
+            <i class="fa-solid fa-share-nodes"> InstaGram</i>
+          </a>
+          <a class="share-close-btn">&times</a>
+        </div>
+      </div>
+    </div>
+
+    <!--*********************MOBILE-NAV-->
+    <!--*******************************-->
+    <!--*******************************-->
+    <!--*******************************-->
+    <div class="mobile-nav">
+      <a href="#home" class="mobile-nav-links">Home</a>
+      <a href="#about" class="mobile-nav-links">About</a>
+      <a href="#tours" class="mobile-nav-links">Tours</a>
+      <a href="#contact" class="mobile-nav-links">Contact</a>
+    </div>
+
+    <!--**************************HERO-->
+    <!--******************************-->
+    <!--******************************-->
+    <!--******************************-->
+
+    <div class="hero" id="home">
+      <div class="hero-content">
+        <h1>Welcome to Ansell Expeditions</h1>
+        <p>Discover the hidden gems of our world</p>
+        <a href="#tours" id="hero-contact-button">Discover Now</a>
+      </div>
+      <div class="hero-image"></div>
+    </div>
+
+    <!--*************************ABOUT-->
+    <!--******************************-->
+    <!--******************************-->
+    <!--******************************-->
+    <div id="about" class="about-content">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+          Ansell Expeditions was founded in 2024 with a passion for adventure
+          and a commitment to responsible travel. We specialize in organizing
+          unique expeditions to some of the world's most remote and breathtaking
+          locations.
+        </p>
+        <p>
+          Our team of experienced guides and adventure enthusiasts has led
+          <span id="expedition-counter">0</span> successful expeditions,
+          creating unforgettable memories for thousands of travelers from around
+          the globe.
+        </p>
+        <p>At Ansell Expeditions, we believe in:</p>
+        <ul>
+          <li>Sustainable and eco-friendly travel practices</li>
+          <li>Supporting local communities in the areas we visit</li>
+          <li>Providing safe and well-planned adventures</li>
+          <li>Fostering a spirit of exploration and personal growth</li>
+        </ul>
+        <a href="#tours" class="cta-button">Join Our Next Adventure</a>
+      </div>
+      <div class="about-image">
+        <div class="social-icons">
+          <a
+            href="https://web.facebook.com/kyle.ansell.73"
+            aria-label="Facebook"
+            src=""
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--*************************TOURS-->
+    <!--******************************-->
+    <!--******************************-->
+    <!--******************************-->
+    <header id="tours">
+      <h1>Ansell Expeditions</h1>
+      <h2>South African Adventures</h2>
+    </header>
+
+    <main>
+      <section id="tours-container">
+        <!-- Tour cards will be dynamically added here -->
+      </section>
+
+      <button id="load-more">Load More Tours</button>
+
+      <section id="my-tours">
+        <h2>My Tours</h2>
+        <div id="my-tours-list"></div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-image" src="" alt="" class="modal-image" />
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+        <p id="modal-rating"></p>
+        <button id="add-to-my-tours">Add to My Tours</button>
+      </div>
+    </div>
+
+    <!--***********************CONTACT-->
+    <!--******************************-->
+    <!--******************************-->
+    <!--******************************-->
+
+    <div class="contact-container" id="contact">
+      <header>
+        <h1>Contact Ansell Expeditions<span class="logo"></span></h1>
+      </header>
+      <form id="contact-form" class="contact-form">
+        <h2>Get in Touch</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-text" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-text" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="booking">Expedition Booking</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="error-text" id="subject-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <div class="error-text" id="message-error"></div>
+        </div>
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+      <div id="message" class="message"></div>
+      <div id="loading" class="loading">Sending message</div>
+    </div>
+
+    <!--************************FOOTER-->
+    <!--******************************-->
+    <!--******************************-->
+    <!--******************************-->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Ansell Expeditions</h3>
+            <p>Discover the hidden gems of our world.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#tours">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://web.facebook.com/kyle.ansell.73"
+                aria-label="Facebook"
+                src=""
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; Design by &copy
+            <a href="https://github.com/qkd888">QKDEV</a> 2024. All rights
+            reserved.
+          </p>
+          <small>&copy Ansell Expeditions 2024</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
