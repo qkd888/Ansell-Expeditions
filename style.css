@@ -693,7 +693,7 @@ main #tours-container {
 }
 .contact-container .message.error {
   background-color: rgba(255, 0, 0, 0.2);
-  color: #990000;
+  color: black;
 }
 .contact-container .loading {
   display: none;

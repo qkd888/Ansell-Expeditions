@@ -771,7 +771,7 @@ main {
 
     &.error {
       background-color: rgba(red, 0.2);
-      color: darken(red, 20%);
+      color: darken(rgb(0, 0, 0), 20%);
     }
   }
 
